@@ -1,4 +1,32 @@
 ____________________________________________________________________________
+[  8281] By: autrijus                              on 2003/09/28  13:50:46
+        Log: * This be 0.00_06.
+	   ! Makefile.PL lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8280] By: autrijus                              on 2003/09/28  13:50:20
+        Log: * no AdminReport.
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8263] By: autrijus                              on 2003/09/28  06:52:58
+        Log: * make classaccessible explicit.
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8249] By: autrijus                              on 2003/09/26  11:15:49
+        Log: * switch to ->Obj.
+	   ! lib/RTx/ReportSource_Overlay.pm lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8244] By: autrijus                              on 2003/09/26  10:36:28
+        Log: * foo
+	   ! lib/RTx/ReportSource_Overlay.pm
+____________________________________________________________________________
+[  8228] By: autrijus                              on 2003/09/25  03:39:15
+        Log: * deleting reports should not cause referential integrity.
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8186] By: autrijus                              on 2003/09/20  05:29:44
+        Log: * redo permissions.
+	   ! lib/RTx/Report_Overlay.pm lib/RTx/Reports_Overlay.pm
+____________________________________________________________________________
 [  8138] By: autrijus                              on 2003/09/14  20:21:02
         Log: * This be 0.00_05.
 	   ! Makefile.PL lib/RTx/Report_Overlay.pm

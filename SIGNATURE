@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 5c019efdacf57489b0e17bdd0ffa4b110c129bbf Changes
+SHA1 c4e27d71aab203696a202ead360a0de947c8506b Changes
 SHA1 8e0cc6b37777171a7131b398449b46ecfa28b262 MANIFEST
-SHA1 5499e5bfaf51df5406fdd4cc0dc33437c02b67b1 META.yml
-SHA1 489a825d768a5b9d8f6845221340da26bf8358d0 Makefile.PL
+SHA1 4afeb9c1248e0c4e37cafe9d501d86ea54c65633 META.yml
+SHA1 ee7b28fe30df177ffa7989dc84962701d777c026 Makefile.PL
 SHA1 c371c92d440144461fb1b392facb0dbb2c08502c README
 SHA1 dfc50b59e850993aedb4ba4d25b28cdb8509d67b html/RG/index.html
 SHA1 1090dfe9ee5b3d7a4da2480265c4f1350697769e inc/Module/Install.pm
@@ -30,11 +30,11 @@ SHA1 4290a41375e931a7265eb287c8eb58591cec7db4 inc/Test/Builder.pm
 SHA1 aede4a85850068b00e25b6b4f10bf1cd11c5b73b inc/Test/More.pm
 SHA1 9a79a2d5fd7622cb273f19b4a937a2fd129765d0 lib/RTx/Report.pm
 SHA1 ce98fc6db57bcc5c70f14552072bb3fc0673fa97 lib/RTx/ReportSource.pm
-SHA1 854357cbd7d84c4b11df41a760967cf1cc4e6f5f lib/RTx/ReportSource_Overlay.pm
+SHA1 6f41cde86c46510ea622743244914167437840f1 lib/RTx/ReportSource_Overlay.pm
 SHA1 cfaef96d4fc2c4b62f1f545b52ef77ce7171d348 lib/RTx/ReportSources.pm
-SHA1 c0aa961514bddcd7c06129cb4877d2f69fc31102 lib/RTx/Report_Overlay.pm
+SHA1 867e5a47e28ba14ce93135657497b8941b3e0b3f lib/RTx/Report_Overlay.pm
 SHA1 79f5121105aa167de35d51ce205dfb79beefecd4 lib/RTx/Reports.pm
-SHA1 fa416bf7edd0bca51bf100ec3705d330eb0a75ca lib/RTx/Reports_Overlay.pm
+SHA1 65efa36a66b8e6e01a2744386b10817f0e2a5572 lib/RTx/Reports_Overlay.pm
 SHA1 78b9ed960e0b8b870f04a6993302c6b2828641d4 po/zh_cn.po
 SHA1 8e3a2f95747c28e1feed05807e85b7e622e22f69 po/zh_tw.po
 SHA1 da57ce23f32b963720ac2826190120f64dea4e1f t/0-signature.t
@@ -42,7 +42,7 @@ SHA1 af7191fc5bad774ebd2efdbcaf3989904bf81f1b t/1-basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.1 (FreeBSD)
 
-iD8DBQE/ZM5qtLPdNzw1AaARAluyAJ9FTQAztYsuP925YDDZVhGRsfBz+gCglFaW
-knN8A5Sm8Hs0O/BwbC70Nj8=
-=Majc
+iD8DBQE/dudztLPdNzw1AaARAuLzAKCpcDs2rgQ0Nygu85jPVBGxafr+GgCfb8QU
+40pGfYtVJ75AwsqYJPh7gP0=
+=14Qj
 -----END PGP SIGNATURE-----

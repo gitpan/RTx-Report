@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Report_Overlay.pm $ $Author: autrijus $
-# $Revision: #7 $ $Change: 8138 $ $DateTime: 2003/09/14 20:21:02 $
+# $Revision: #14 $ $Change: 8281 $ $DateTime: 2003/09/28 13:50:46 $
 
 =head1 NAME
 
@@ -24,28 +24,32 @@ use RTx::Report;
 
 use strict;
 no warnings qw(redefine);
-our $VERSION = '0.00_05';
+our $VERSION = '0.00_06';
 
 use vars qw($RIGHTS);
-use RT::Groups;
 use RT::ACL;
 use DBIx::ReportBuilder;
 
 $RIGHTS = {
-    SeeReport		=> 'Can this principal see this report',       # loc_pair
     ShowACL		=> 'Display Access Control List',              # loc_pair
     ModifyACL		=> 'Modify Access Control List',               # loc_pair
-    Print		=> 'Print',
-    Save		=> 'Save',
-    Delete		=> 'Delete',
-    Copy		=> 'Copy',
-    Import		=> 'Import',
-    Export		=> 'Export',
-    P			=> 'P',
-    IMG			=> 'IMG',
-    GRAPH		=> 'GRAPH',
-    TABLE		=> 'TABLE',
-    SUBREPORT		=> 'SUBREPORT',
+#   CreateReport -- belongs to ::Reports
+    SeeReport		=> 'Can this principal see this report',       # loc_pair
+    PrintReport		=> 'Print report',			# loc_pair
+    SaveReport		=> 'Save report',			# loc_pair
+    DeleteReport	=> 'Delete report',			# loc_pair
+    CopyReport		=> 'Copy report',			# loc_pair
+    ImportReport	=> 'Import report',			# loc_pair
+    ExportReport	=> 'Export report',			# loc_pair
+    PartP		=> 'Insert and modify part P',		# loc_pair
+    PartImg		=> 'Insert and modify part Img',	# loc_pair
+    PartGraph		=> 'Insert and modify part Graph',	# loc_pair
+    PartTable		=> 'Insert and modify part Table',	# loc_pair
+    PartInclude		=> 'Insert and modify part Include',	# loc_pair
+    ClauseJoin		=> 'Insert and modify clause Join',	# loc_pair
+    ClauseLimit		=> 'Insert and modify clause Limit',	# loc_pair
+    ClauseOrderby	=> 'Insert and modify clause Orderby',	# loc_pair
+    ClauseCell		=> 'Insert and modify clause Cell',	# loc_pair
 };
 
 # Tell RT::ACE that this sort of object can get acls granted
@@ -70,6 +74,25 @@ sub AvailableRights {
     return($RIGHTS);
 }
 
+
+sub _Accessible {
+    my $self = shift;
+    my %Cols = (
+        id            => 'read',
+        Name          => 'read/write',
+        Category      => 'read/write',
+        Description   => 'read/write',
+        Content       => 'read/write',
+        Queue         => 'read/write',
+        Owner         => 'read/write',
+        Disabled      => 'read/write',
+        Creator       => 'read/auto',
+        Created       => 'read/auto',
+        LastUpdatedBy => 'read/auto',
+        LastUpdated   => 'read/auto'
+    );
+    return $self->SUPER::_Accessible( @_, %Cols );
+}
 
 # {{{ sub Create
 
@@ -110,16 +133,6 @@ sub Create {
 
     $RT::Handle->Commit();
     return ( $id, $self->loc("Report created") );
-}
-
-# }}}
-
-# {{{ sub Delete 
-
-sub Delete {
-    my $self = shift;
-    return ( 0,
-        $self->loc('Deleting this object would break referential integrity') );
 }
 
 # }}}
@@ -206,10 +219,6 @@ sub ValidateName {
 # {{{ sub _Set
 sub _Set {
     my $self = shift;
-
-    unless ( $self->CurrentUserHasRight('AdminReport') ) {
-        return ( 0, $self->loc('Permission Denied') );
-    }
     return ( $self->SUPER::_Set(@_) );
 }
 
@@ -279,6 +288,14 @@ sub HasRight {
     }
     return (
         $args{'Principal'}->HasRight(
+            Object => $RT::System,
+            Right    => 'SuperUser',
+          ) or
+        $args{'Principal'}->HasRight(
+            Object => $RTx::Reports,
+            Right    => $args{'Right'}
+          ) or
+        $args{'Principal'}->HasRight(
             Object => $self,
             Right    => $args{'Right'}
           )
@@ -307,22 +324,7 @@ sub ContentObj {
 
 sub NewContent {
     my $self = shift;
-
-    my $obj = XML::Twig->new( @_ );
-    $obj->parse(
-	'<?xml version="1.0" encoding="UTF-8"?>'.
-	'<html xmlns="http://aut.dyndns.org/RG/xhtml" />'
-    );
-
-    my $root = $obj->root;
-    my $body = $root->insert_new_elt( 'body' );
-    my $head = $root->insert_new_elt( 'head' );
-    $body->insert_new_elt( last_child => $_ )->insert_new_elt( 'p' )
-	foreach qw(preamble header content footer postamble);
-    $head->set_att(orientation => 'portrait');
-    $head->set_att(paper => 'a4paper');
-
-    return $obj->sprint;
+    return DBIx::ReportBuilder->new->NewContent;
 }
 
 sub SetContentObj {
@@ -365,55 +367,21 @@ sub ReportSourceObj {
     return $ReportSourceObj;
 }
 
-sub Handle {
+sub HandleObj {
     my $self = shift;
-    $self->ReportSourceObj->Handle;
+    $self->ReportSourceObj->HandleObj;
 }
 
 sub Keys {
     qw(Name Description Category Author Disabled ReportSource Content);
 }
 
-sub Vars {
-    qw(Page PageCount Date Time ReportName);
-}
-
-sub Fields {
-    qw(Data Function Formula Statistics Grouping);
-}
-
 sub Views {
-    qw(Edit Preview PDF);
-}
-
-sub Objects {
-    qw(P Img Table Graph Include);
-}
-
-sub Parts {
-    qw(p img table graph include);
-}
-
-sub Clauses {
+    qw(Edit Preview PDF MSWord);
 }
 
 sub Sets {
-    qw(Parameter Page); # XXX Condition
-}
-
-my %TypeMap = (
-    P           => [ qw/align font size border/ ],
-    VAR         => [ qw/align font size border/ ],
-    IMG         => [ qw/alt width height/ ],
-    TABLE       => [ qw/width height/ ],
-    GRAPH       => [ qw/type style legend threed threed_shading cumulate show_values values_vertical rotate_chart title/ ],
-    SUBREPORT   => []
-);
-
-sub Attrs {
-    my ($self, $obj) = @_;
-    return \%TypeMap unless $obj;
-    @{$TypeMap{uc($obj)}};
+    qw(Parameter Page);
 }
 
 1;

@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Reports_Overlay.pm $ $Author: autrijus $
-# $Revision: #6 $ $Change: 8121 $ $DateTime: 2003/09/14 16:05:04 $
+# $Revision: #7 $ $Change: 8186 $ $DateTime: 2003/09/20 05:29:44 $
 
 package RTx::Reports;
 no warnings 'redefine';
@@ -11,7 +11,7 @@ use vars qw/$RIGHTS/;
 # Reports rights are rights granted to the whole system
 # XXX TODO Can't localize these outside of having an object around.
 $RIGHTS = {
-    Create         => 'Create',				# loc_pair
+    CreateReport         => 'Create report',				# loc_pair
 };
 
 # Tell RT::ACE that this sort of object can get acls granted
@@ -36,7 +36,7 @@ sub AvailableRights {
     my $report = RTx::Report->new($RT::SystemUser);
     my $rr = $report->AvailableRights();
 
-    # Build a merged list of all system wide rights, queue rights and group rights.
+    # Build a merged list of all reports wide rights
     my %rights = (%{$RIGHTS}, %{$rr});
     return(\%rights);
 }

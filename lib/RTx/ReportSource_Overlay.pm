@@ -44,14 +44,21 @@ sub LoadByName {
     $self->LoadByCol("Name" => $identifier);
 }
 
-sub Handle {
+sub HandleObj {
     my $self = shift;
     my %args = (
 	map { $_ => $self->$_ }
 	    qw(Driver Database Host User Password),
     );
     $args{Port} = $1 if $args{Host} =~ s/:(\d+)$//;
-    $self->{handle} = DBIx::SearchBuilder::Handle->new;
+    my $class = 'DBIx::SearchBuilder::Handle';
+    if (my $driver = $self->Driver) {
+	$class .= "::$driver";
+	my $file = $class;
+	$file =~ s{::}{/}g;
+	require "$file.pm";
+    }
+    $self->{handle} = $class->new;
     $self->{handle}->Connect( %args );
     return $self->{handle};
 }
