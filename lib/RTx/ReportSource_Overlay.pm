@@ -59,10 +59,11 @@ sub HandleObj {
 	require "$file.pm";
     }
     $self->{handle} = $class->new;
-    $self->{handle}->Connect( %args );
+    eval { $self->{handle}->Connect( %args ); 1 } or die "Cannot connect: " . join(" ", %args);
     return $self->{handle};
 }
 
 1;
+
 
 

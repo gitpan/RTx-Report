@@ -1,12 +1,9 @@
 #!/usr/bin/env perl
 # $File: //member/autrijus/RTx-Report/Makefile.PL $ $Author: autrijus $
-# $Revision: #8 $ $Change: 8479 $ $DateTime: 2003/10/19 01:41:10 $
+# $Revision: #10 $ $Change: 8721 $ $DateTime: 2003/11/06 16:06:31 $
 
 use 5.006;
 use inc::Module::Install;
-
-include_deps   ('Test::More', 5.006);
-build_requires ('Test::More', 0);
 
 warn << '.';
 ### PLEASE NOTE ##############################################
@@ -19,15 +16,19 @@ This is *PRE-ALPHA* code.  Using this module for anything
 
 # XXX - figure out how to install po/ and html/
 
-WriteMakefile (
-    AUTHOR	    => 'Autrijus Tang (autrijus@autrijus.org)',
-    NAME	    => 'RTx::Report',
-    ABSTRACT	    => 'RT Report Extension',
-    VERSION_FROM    => 'lib/RTx/Report.pm',
-    SIGN	    => 1,
-    PREREQ_PM       => {
-        'XML::Twig'		=> '3.00',
-        'DBIx::ReportBuilder'	=> '0.00_12',
-    },
+author		('Autrijus Tang (autrijus@autrijus.org)');
+name		('RTx-Report');
+abstract	('RT Report Extension');
+version_from	('lib/RTx/Report.pm');
+requires	(
+    'XML::Twig'		    => '3.00',
+    'DBIx::ReportBuilder'   => '0.00_13',
 );
 
+sign		(1);
+license		('perl');
+include_deps	('Test::More', 5.006);
+build_requires	('Test::More', 0);
+
+&Meta->write;
+&Makefile->write;

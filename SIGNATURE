@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.35.
+signed via the Module::Signature module, version 0.37.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,24 +15,23 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 6145823656267dbf397970b2e1d7806c3dc55678 Changes
-SHA1 5d337d4e349b551a2b7bca23d3761156db166cac MANIFEST
-SHA1 a215e905e0518a385c286986b382fd5e82cf03e0 META.yml
-SHA1 92bcf6a0ac9b8aae9f34f93a9b22062e94a47f20 Makefile.PL
+SHA1 4ae587c8a1ac5149c3c8c26f71036fbce9c99ef1 MANIFEST
+SHA1 67cd86af32698bc7f8a06a5ddbd01697776f72fc META.yml
+SHA1 d8321bf34a70ff806f7f147806c3d9aad01795db Makefile.PL
 SHA1 c371c92d440144461fb1b392facb0dbb2c08502c README
 SHA1 dfc50b59e850993aedb4ba4d25b28cdb8509d67b html/RG/index.html
-SHA1 9a48700879e8032dd5b96ffaa27f59641e2bc9af inc/Module/Install.pm
+SHA1 8b4877cb0aae407fcb37a4ac31f2f943bfbe2fe4 inc/Module/Install.pm
 SHA1 019bccc5b2e364447c6e6e150d049ca2a216598e inc/Module/Install/Base.pm
 SHA1 c1e427c1f670a187cb663e8e446193bbce16b92f inc/Module/Install/Include.pm
-SHA1 e2547371d0317abbfa3d56b0d20bba909885d7db inc/Module/Install/MakeMaker.pm
-SHA1 2a6f3921bb5c83e95856664ff5cbea98bdc43674 inc/Module/Install/Makefile.pm
-SHA1 722f8b5df4795ab97cb65538b19758d874b961eb inc/Module/Install/Metadata.pm
+SHA1 8508e76cf6417588c0118ec85f7d56be15383c00 inc/Module/Install/Makefile.pm
+SHA1 ef550fd641db011c741402b799ace0a446f8d8ec inc/Module/Install/Metadata.pm
 SHA1 e28bb5a620a5c392b06450778d35cf1707bdca97 inc/Test/Builder.pm
-SHA1 ae7b5b4c6e437454712eccfa5c09e0c95560b5c5 inc/Test/More.pm
-SHA1 762a66c711b837fea1c66671022537b3bc1ac819 lib/RTx/Report.pm
+SHA1 43dcc5ca8a2b8b891ec467726c9f9c9454dac597 inc/Test/More.pm
+SHA1 f0473a1426ce2a7670c5af0f7b96d3c387c93a17 lib/RTx/Report.pm
 SHA1 ce98fc6db57bcc5c70f14552072bb3fc0673fa97 lib/RTx/ReportSource.pm
-SHA1 6f41cde86c46510ea622743244914167437840f1 lib/RTx/ReportSource_Overlay.pm
+SHA1 fc2d97f263af2734085a618e975ab377d6a1d4a6 lib/RTx/ReportSource_Overlay.pm
 SHA1 cfaef96d4fc2c4b62f1f545b52ef77ce7171d348 lib/RTx/ReportSources.pm
-SHA1 775bf24cabd468d9e9ee6d63e0f7a6f98302e6ed lib/RTx/Report_Overlay.pm
+SHA1 d52e05e9d45f3257702a9e672330a391710bc0b9 lib/RTx/Report_Overlay.pm
 SHA1 79f5121105aa167de35d51ce205dfb79beefecd4 lib/RTx/Reports.pm
 SHA1 28660238d1a4f14e47c81b7e3cf2cad89f111507 lib/RTx/Reports_Overlay.pm
 SHA1 78b9ed960e0b8b870f04a6993302c6b2828641d4 po/zh_cn.po
@@ -42,7 +41,7 @@ SHA1 af7191fc5bad774ebd2efdbcaf3989904bf81f1b t/1-basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.3 (FreeBSD)
 
-iD8DBQE/kevstLPdNzw1AaARAiDdAKCeP5X2OAVgefXIRVRFNl8FCggAAACfW1Ln
-qVU9DZ/yPQprh6CP9vX7Olg=
-=TMcG
+iD8DBQE/qnHhtLPdNzw1AaARAmL0AJ9TGmX3Bf3pbFUAX/I0zOpMa8olEwCfYISI
+tjX8HJEfUWSnsyz4GnL86DA=
+=2YwW
 -----END PGP SIGNATURE-----

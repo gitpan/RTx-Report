@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Report_Overlay.pm $ $Author: autrijus $
-# $Revision: #17 $ $Change: 8478 $ $DateTime: 2003/10/19 01:40:28 $
+# $Revision: #19 $ $Change: 8719 $ $DateTime: 2003/11/06 16:03:23 $
 
 =head1 NAME
 
@@ -48,6 +48,7 @@ $RIGHTS = {
     ClauseJoin		=> 'Insert and modify clause Join',	# loc_pair
     ClauseLimit		=> 'Insert and modify clause Limit',	# loc_pair
     ClauseOrderby	=> 'Insert and modify clause Orderby',	# loc_pair
+    ClauseGroupby	=> 'Insert and modify clause Groupby',	# loc_pair
     ClauseCell		=> 'Insert and modify clause Cell',	# loc_pair
 };
 
@@ -363,6 +364,7 @@ sub ReportSourceObj {
     my $self = shift;
     my $ReportSourceObj = RTx::ReportSource->new($self->CurrentUser);
     $ReportSourceObj->Load($self->ReportSource);
+    die "Cannot load " . $self->ReportSource unless $ReportSourceObj->Id;
     return $ReportSourceObj;
 }
 
