@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Report_Overlay.pm $ $Author: autrijus $
-# $Revision: #3 $ $Change: 7964 $ $DateTime: 2003/09/08 00:05:41 $
+# $Revision: #5 $ $Change: 8046 $ $DateTime: 2003/09/11 00:33:36 $
 
 =head1 NAME
 
@@ -24,12 +24,12 @@ use RTx::Report;
 
 use strict;
 no warnings qw(redefine);
-our $VERSION = '0.00_01';
+our $VERSION = '0.00_04';
 
 use vars qw($RIGHTS);
 use RT::Groups;
 use RT::ACL;
-use XML::Twig;
+use DBIx::ReportBuilder;
 
 $RIGHTS = {
     SeeReport		=> 'Can this principal see this report',       # loc_pair
@@ -337,14 +337,10 @@ sub SetContentObj {
 my $_id;
 sub ParseContent {
     my $self = shift;
-    my $obj = XML::Twig->new(
-	twig_handlers => {
-	    map { lc($_) => \&_id } $self->Objects,
-	}
+    my $obj = DBIx::ReportBuilder->new(
+	Handle	=> $self->Handle,
+	Content	=> $_[0],
     );
-
-    $_id = 0;
-    $obj->parse($_[0]);
     return $obj;
 }
 

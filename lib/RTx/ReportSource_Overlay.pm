@@ -51,7 +51,9 @@ sub Handle {
 	    qw(Driver Database Host User Password),
     );
     $args{Port} = $1 if $args{Host} =~ s/:(\d+)$//;
-    $self->{handle} = DBIx::SearchBuilder->new( %args );
+    $self->{handle} = DBIx::SearchBuilder::Handle->new;
+    $self->{handle}->Connect( %args );
+    return $self->{handle};
 }
 
 1;

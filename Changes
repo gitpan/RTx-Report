@@ -1,4 +1,22 @@
 ____________________________________________________________________________
+[  8046] By: autrijus                              on 2003/09/11  00:33:36
+        Log: * Of course, I meant 0.00_04. ;)
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8045] By: autrijus                              on 2003/09/11  00:32:05
+        Log: * This be 0.04.
+             * new methods, ->RenderReport and ->DescribeReport,
+             to take advantage of ReportBuilder's "include" feature.
+	   ! Makefile.PL lib/RTx/Reports_Overlay.pm
+____________________________________________________________________________
+[  8001] By: autrijus                              on 2003/09/09  01:05:26
+        Log: * use handle to connect.
+	   ! lib/RTx/ReportSource_Overlay.pm
+____________________________________________________________________________
+[  7987] By: autrijus                              on 2003/09/08  18:41:09
+        Log: * starting to move away from directly using XML::Twig.
+	   ! lib/RTx/Report_Overlay.pm t/1-basic.t
+____________________________________________________________________________
 [  7965] By: autrijus                              on 2003/09/08  00:10:55
         Log: * This be 0.00_01, initial cpan prerelease.
 	   ! Makefile.PL t/1-basic.t
