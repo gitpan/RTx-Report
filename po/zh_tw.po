@@ -1,0 +1,708 @@
+# $File: //member/autrijus/RTx-Report/po/zh_tw.po $ $Author: autrijus $
+# $Revision: #1 $ $Change: 7964 $ $DateTime: 2003/09/08 00:05:41 $
+
+msgid ""
+msgstr ""
+"Last-Translator: Autrijus Tang <autrijus@autrijus.org>\n"
+"Language-Team: Chinese <members@ourinet.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "$var Field"
+msgstr "$var 欄位"
+
+msgid "3d"
+msgstr "立體"
+
+msgid "3d_shading"
+msgstr "陰影"
+
+msgid "<< Add"
+msgstr "加入 &gt;&gt;"
+
+msgid "<< Add All"
+msgstr "全選 &gt;&gt;"
+
+msgid "<i>(untitled)</i>"
+msgstr "<i>(未命名)</i>"
+
+msgid "Accessible Fields"
+msgstr "可存取的欄位"
+
+msgid "Action Permissions"
+msgstr "操作權限"
+
+msgid "Align"
+msgstr "對齊"
+
+msgid "Allow All"
+msgstr "全部允許"
+
+msgid "Arial"
+msgstr "細明體"
+
+msgid "Author"
+msgstr "報表製作人"
+
+msgid "Available Database Tables:"
+msgstr "可用的資料庫表格："
+
+msgid "BODY"
+msgstr "內文"
+
+msgid "Backend"
+msgstr "後台"
+
+msgid "Basic Info"
+msgstr "基本設定"
+
+msgid "Begin Edit"
+msgstr "開始編輯"
+
+msgid "Border"
+msgstr "框線"
+
+msgid "Can't open %1: %2"
+msgstr "無法開啟 %1: %2"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Category"
+msgstr "類別"
+
+msgid "Change"
+msgstr "確定"
+
+msgid "Check"
+msgstr "檢查"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Command"
+msgstr "命令"
+
+msgid "Component Permissions"
+msgstr "元件權限"
+
+msgid "Condition"
+msgstr "條件"
+
+msgid "Condition Setup"
+msgstr "對象篩選"
+
+msgid "Connect"
+msgstr "重新連線"
+
+msgid "Connection Password"
+msgstr "連線密碼"
+
+msgid "Connection String"
+msgstr "資料庫連結字串"
+
+msgid "Converting file, please wait..."
+msgstr "檔案轉換中，請稍候..."
+
+msgid "Copy"
+msgstr "複製"
+
+msgid "Copy successful!"
+msgstr "複製成功!"
+
+msgid "Count"
+msgstr "試算"
+
+msgid "Creation Date"
+msgstr "建立日期"
+
+msgid "Current Members"
+msgstr "現有成員"
+
+msgid "Current Reports"
+msgstr "現有報表一覽"
+
+msgid "Current value"
+msgstr "目前設定值"
+
+msgid "DBI"
+msgstr "資料庫後端"
+
+msgid "DSN"
+msgstr "資料庫連結字串"
+
+msgid "Data Field"
+msgstr "資料欄位"
+
+msgid "Data Field Settings"
+msgstr "資料欄位設定"
+
+msgid "Data Source"
+msgstr "資料來源"
+
+msgid "Data Source Access"
+msgstr "資料來源存取"
+
+msgid "Data Sources"
+msgstr "資料來源"
+
+msgid "Database"
+msgstr "資料庫"
+
+msgid "Database Setup"
+msgstr "資料庫設定"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Default value"
+msgstr "預設值"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "DeleteField"
+msgstr "刪除欄位"
+
+msgid "Deny All"
+msgstr "全部禁止"
+
+msgid "Description"
+msgstr "內容描述"
+
+msgid "Display Name"
+msgstr "中文名稱"
+
+msgid "Display Texts"
+msgstr "中文名稱"
+
+msgid "Downward"
+msgstr "下移"
+
+msgid "Driver"
+msgstr "驅動程式"
+
+msgid "Dude, I'm sorry. You gotta a frame-enabled browser and come back again."
+msgstr "抱歉, 請愛用頁框."
+
+msgid "Edit"
+msgstr "編輯"
+
+msgid "Error"
+msgstr "錯誤"
+
+msgid "Error Message"
+msgstr "錯誤訊息"
+
+msgid "Export"
+msgstr "匯出"
+
+msgid "Field"
+msgstr "欄位"
+
+msgid "Field Name"
+msgstr "欄位名稱"
+
+msgid "Field Names"
+msgstr "欄位名稱"
+
+msgid "Field Permissions"
+msgstr "欄位權限"
+
+msgid "Field Settings"
+msgstr "連結欄位設定"
+
+msgid "Fields"
+msgstr "欄位"
+
+msgid "Fields list:"
+msgstr "欄位一覽:"
+
+msgid "File"
+msgstr "檔案"
+
+msgid "File to Import"
+msgstr "匯入檔案"
+
+msgid "Font"
+msgstr "字型"
+
+msgid "Formula"
+msgstr "運算"
+
+msgid "Formula Field"
+msgstr "運算欄位"
+
+msgid "Formula Function"
+msgstr "運算函數"
+
+msgid "Frontend"
+msgstr "前台"
+
+msgid "Function"
+msgstr "函數"
+
+msgid "Function Field"
+msgstr "函式欄位"
+
+msgid "Global Permissions"
+msgstr "全域權限"
+
+msgid "Global Setup"
+msgstr "報表設定"
+
+msgid "Group Membership"
+msgstr "群組成員"
+
+msgid "Group Permission"
+msgstr "群組權限"
+
+msgid "Grouping Field"
+msgstr "群組欄位"
+
+msgid "Height"
+msgstr "高度"
+
+msgid "Hide"
+msgstr "隱藏"
+
+msgid "Import"
+msgstr "匯入"
+
+msgid "Included Database Tables:"
+msgstr "取用的資料庫表格："
+
+msgid "Index Field"
+msgstr "索引欄位"
+
+msgid "Info"
+msgstr "通知"
+
+msgid "Insert"
+msgstr "插入物件"
+
+msgid "Landscape"
+msgstr "橫幅"
+
+msgid "Last Access"
+msgstr "前次存取"
+
+msgid "Last Modified"
+msgstr "前次更新"
+
+msgid "Leftward"
+msgstr "左移"
+
+msgid "Lock"
+msgstr "開放狀態"
+
+msgid "Locked"
+msgstr "鎖定"
+
+msgid "Login"
+msgstr "登入"
+
+msgid "Login failed."
+msgstr "登入失敗."
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Lot"
+msgstr "批次"
+
+msgid "Margin settings"
+msgstr "邊距及紙張設定"
+
+msgid "Modification Date"
+msgstr "前次更新"
+
+msgid "Modify"
+msgstr "修改"
+
+msgid "New"
+msgstr "新增"
+
+msgid "New %1"
+msgstr "新增%1"
+
+msgid "New Report Name"
+msgstr "新增報表名稱"
+
+msgid "New report name:"
+msgstr "新增報表名稱:"
+
+msgid "Normal"
+msgstr "編輯"
+
+msgid "Not logged in."
+msgstr "尚未登入"
+
+msgid "OK"
+msgstr "確定"
+
+msgid "Open"
+msgstr "開啟"
+
+msgid "Other Fields"
+msgstr "其他欄位"
+
+msgid "Other Users"
+msgstr "其他使用者"
+
+msgid "Other users"
+msgstr "其它使用者"
+
+msgid "PDF"
+msgstr "列印預覽"
+
+msgid "Page"
+msgstr "頁碼"
+
+msgid "Page Setup"
+msgstr "版面設定"
+
+msgid "Page(s)"
+msgstr "頁"
+
+msgid "PageCount"
+msgstr "總頁數"
+
+msgid "Paper size:"
+msgstr "紙張大小："
+
+msgid "Parameter"
+msgstr "參數名稱"
+
+msgid "Parameter Setup"
+msgstr "控制參數"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Period"
+msgstr "時間單位"
+
+msgid "Permission"
+msgstr "權限"
+
+msgid "Permission Group"
+msgstr "權限群組名稱"
+
+msgid "Permission Group Members"
+msgstr "權限群組成員"
+
+msgid "Please choose"
+msgstr "請選擇"
+
+msgid "Please contact customer service!"
+msgstr "請與客服人員聯絡！"
+
+msgid "Please select a group on the left side to modify."
+msgstr "請點選左方的群組，以進行更動。"
+
+msgid "Please select a part below to edit its properties."
+msgstr "請按下列報表元素, 以編輯它們的設定."
+
+msgid "Please select a table on the left side to modify."
+msgstr "請點選左方的表格，以進行更動。"
+
+msgid ""
+"Please select the database sources first, and click on 'Change' to create "
+"this %1."
+msgstr "請先選擇資料來源，再按「確定」鍵以建立這份%1。"
+
+msgid "Please specify the file to import"
+msgstr "請選擇匯入檔案名稱"
+
+msgid "Please use the Insert Field buttons above to start editing."
+msgstr "請利用上方的「插入欄位」按鈕，開始編輯。"
+
+msgid "Portrait"
+msgstr "直幅"
+
+msgid "Preferences"
+msgstr "偏好設定"
+
+msgid "Preview"
+msgstr "預覽"
+
+msgid "Print"
+msgstr "列印"
+
+msgid "RG Error"
+msgstr "eReport 系統錯誤"
+
+msgid "Really delete?"
+msgstr "確認刪除?"
+
+msgid "Reconnect"
+msgstr "重新連線"
+
+msgid "Remove >>"
+msgstr "&lt;&lt; 移除"
+
+msgid "Remove All >>"
+msgstr "&lt;&lt; 全移"
+
+msgid "Rename"
+msgstr "更名"
+
+msgid "Report"
+msgstr "報表"
+
+msgid "Report Edit"
+msgstr "報表製作"
+
+msgid "Report Generator - Custom Report"
+msgstr "自訂功能系統 ─ 自訂報表製作"
+
+msgid "Report Generator - System Settings"
+msgstr "自訂功能系統 ─ 報表系統設定"
+
+msgid "Report Name"
+msgstr "報表名稱"
+
+msgid "Report Permissions"
+msgstr "報表權限"
+
+msgid "Report Setup"
+msgstr "報表設定"
+
+msgid "Report not saved. Close this window anyway?"
+msgstr "報表尚未儲存。確定要關閉此視窗嗎？"
+
+msgid "Report not saved. Leave this window anyway?"
+msgstr "報表尚未儲存。確定要離開此視窗嗎？"
+
+msgid "Report saved."
+msgstr "報表已儲存。"
+
+msgid "ReportName"
+msgstr "報表名稱"
+
+msgid "Reset"
+msgstr "重設"
+
+msgid "Revert to Original"
+msgstr "回復原設定值"
+
+msgid "Rightward"
+msgstr "右移"
+
+msgid "Save"
+msgstr "儲存"
+
+msgid "Save Changes"
+msgstr "儲存設定"
+
+msgid "Save as Report Name"
+msgstr "複製報表名稱"
+
+msgid "Select a data source to edit its settings:"
+msgstr "請選擇欲編輯的資料來源:"
+
+msgid "Select a group to edit its settings:"
+msgstr "請選擇欲編輯的群組:"
+
+msgid "Select data source to modify its permissions"
+msgstr "請選擇欲修改存取權限的資料來源"
+
+msgid "Show separator"
+msgstr "顯示分隔線"
+
+msgid "Signed in as <b>%1</b>"
+msgstr "使用者：<b>%1</b>"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Source"
+msgstr "原始檔"
+
+msgid "Source Field"
+msgstr "資料欄位"
+
+msgid "Source File"
+msgstr "原始檔"
+
+msgid "Statistics Field"
+msgstr "統計欄位"
+
+msgid "Statistics Function"
+msgstr "統計函數"
+
+msgid "Subject"
+msgstr "主題"
+
+msgid "Submit"
+msgstr "送出"
+
+msgid "System Error!"
+msgstr "系統發生錯誤！"
+
+msgid "Table Name"
+msgstr "表格名稱"
+
+msgid "Target report name:"
+msgstr "複製報表名稱:"
+
+msgid "Template Base"
+msgstr "報表範本資料庫"
+
+msgid "Text"
+msgstr "內容"
+
+msgid "Time"
+msgstr "時間"
+
+msgid "Time to display"
+msgstr "頁面顯示時間"
+
+msgid "Times"
+msgstr "標楷體"
+
+msgid "TransIn"
+msgstr "轉入"
+
+msgid "TransOut"
+msgstr "轉出"
+
+msgid "URL"
+msgstr "網址"
+
+msgid "Unlocked"
+msgstr "開放"
+
+msgid "Upload new file"
+msgstr "上載新圖片"
+
+msgid "Upward"
+msgstr "上移"
+
+msgid "User"
+msgstr "使用者"
+
+msgid "User Name"
+msgstr "用戶名稱"
+
+msgid "Username"
+msgstr "使用者"
+
+msgid "VAR"
+msgstr "變數"
+
+msgid "Variable Name"
+msgstr "變數名稱"
+
+msgid "Width"
+msgstr "寬度"
+
+msgid "You have been logged out of eReport."
+msgstr "你已經成功登出 eReport."
+
+msgid "You're welcome to login again"
+msgstr "歡迎再次登入"
+
+msgid "\\u\\L$type\\E Field"
+msgstr "\\u\\L$type\\E 欄位"
+
+msgid "accentclr"
+msgstr "框線顏色"
+
+msgid "bar"
+msgstr "方柱"
+
+msgid "bars"
+msgstr "長條圖"
+
+msgid "bmargin"
+msgstr "下："
+
+msgid "center"
+msgstr "居中"
+
+msgid "cumulate"
+msgstr "堆疊"
+
+msgid "cylinder"
+msgstr "圓柱"
+
+msgid "eReport %1 from 104 Technologies, Inc."
+msgstr "eReport %1, 104 科技股份有限公司"
+
+msgid "footer"
+msgstr "頁尾"
+
+msgid "graph"
+msgstr "圖表"
+
+msgid "header"
+msgstr "頁頭"
+
+msgid "img"
+msgstr "影像"
+
+msgid "include"
+msgstr "子報表"
+
+msgid "left"
+msgstr "居左"
+
+msgid "legend"
+msgstr "圖解"
+
+msgid "lines"
+msgstr "折線圖"
+
+msgid "lmargin"
+msgstr "左："
+
+msgid "margin"
+msgstr "邊界"
+
+msgid "p"
+msgstr "文字"
+
+msgid "pie"
+msgstr "圓餅圖"
+
+msgid "postamble"
+msgstr "表尾"
+
+msgid "preamble"
+msgstr "表頭"
+
+msgid "right"
+msgstr "居右"
+
+msgid "rmargin"
+msgstr "右："
+
+msgid "rotate_chart"
+msgstr "橫向"
+
+msgid "show_values"
+msgstr "數值"
+
+msgid "style"
+msgstr "樣式"
+
+msgid "table"
+msgstr "表格"
+
+msgid "the calling component did not specify why"
+msgstr "叫用的元件未指明原因"
+
+msgid "title"
+msgstr "標題"
+
+msgid "tmargin"
+msgstr "上："
+
+msgid "type"
+msgstr "類型"
+
+msgid "values_vertical"
+msgstr "垂直顯示數值"

@@ -1,0 +1,16 @@
+____________________________________________________________________________
+[  7965] By: autrijus                              on 2003/09/08  00:10:55
+        Log: * This be 0.00_01, initial cpan prerelease.
+	   ! Makefile.PL t/1-basic.t
+____________________________________________________________________________
+[  7964] By: autrijus                              on 2003/09/08  00:05:41
+        Log: * merge some lexicon and a stuf html in.
+	   + MANIFEST Makefile Makefile.PL README html/RG/index.html
+	   + po/zh_cn.po po/zh_tw.po t/0-signature.t t/1-basic.t
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  7962] By: autrijus                              on 2003/09/07  23:45:05
+        Log: * switch to DBIx::ReportBuilder
+	   - lib/RTx/Report/Clause.pm lib/RTx/Report/Edit.pm
+	   - lib/RTx/Report/Part.pm lib/RTx/Report/Part/P.pm
+	   - lib/RTx/Report/Render.pm lib/RTx/Report/Render/Edit.pm
