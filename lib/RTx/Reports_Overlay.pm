@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Reports_Overlay.pm $ $Author: autrijus $
-# $Revision: #7 $ $Change: 8186 $ $DateTime: 2003/09/20 05:29:44 $
+# $Revision: #8 $ $Change: 8370 $ $DateTime: 2003/10/12 10:45:24 $
 
 package RTx::Reports;
 no warnings 'redefine';
@@ -81,7 +81,7 @@ sub RenderReport {
     return DBIx::ReportBuilder->new(
 	Name		=> $obj->Name,
 	Description	=> $obj->Description,
-	Handle		=> $obj->ReportSourceObj->Handle,
+	Handle		=> $obj->ReportSourceObj->HandleObj,
 	Content		=> $obj->Content,
 	Loc		=> sub { $self->loc(@_) },
 	DescribeReport  => sub { $self->DescribeReport($_[0]) },

@@ -1,26 +1,26 @@
 Changes
-MANIFEST			This list of files
-META.yml
-Makefile.PL
-README
-SIGNATURE
 html/RG/index.html
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Include.pm
-inc/Module/Install/MakeMaker.pm
 inc/Module/Install/Makefile.pm
+inc/Module/Install/MakeMaker.pm
 inc/Module/Install/Metadata.pm
 inc/Test/Builder.pm
 inc/Test/More.pm
 lib/RTx/Report.pm
-lib/RTx/ReportSource.pm
-lib/RTx/ReportSource_Overlay.pm
-lib/RTx/ReportSources.pm
 lib/RTx/Report_Overlay.pm
 lib/RTx/Reports.pm
 lib/RTx/Reports_Overlay.pm
+lib/RTx/ReportSource.pm
+lib/RTx/ReportSource_Overlay.pm
+lib/RTx/ReportSources.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
 po/zh_cn.po
 po/zh_tw.po
+README
+SIGNATURE
 t/0-signature.t
 t/1-basic.t

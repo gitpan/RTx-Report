@@ -1,4 +1,21 @@
 ____________________________________________________________________________
+[  8479] By: autrijus                              on 2003/10/19  01:41:10
+        Log: * oops, wrong version.	_This_ be 0.00_07.
+	   ! Makefile.PL
+____________________________________________________________________________
+[  8478] By: autrijus                              on 2003/10/19  01:40:28
+        Log: * This be 0.00_07.
+	   ! Makefile.PL lib/RTx/Report.pm
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8380] By: autrijus                              on 2003/10/12  15:13:26
+        Log: * implement a stub SearchHook
+	   ! lib/RTx/Report_Overlay.pm
+____________________________________________________________________________
+[  8370] By: autrijus                              on 2003/10/12  10:45:24
+        Log: * fix rendering of subreports.
+	   ! lib/RTx/Reports_Overlay.pm
+____________________________________________________________________________
 [  8281] By: autrijus                              on 2003/09/28  13:50:46
         Log: * This be 0.00_06.
 	   ! Makefile.PL lib/RTx/Report_Overlay.pm
@@ -13,7 +30,8 @@ ____________________________________________________________________________
 ____________________________________________________________________________
 [  8249] By: autrijus                              on 2003/09/26  11:15:49
         Log: * switch to ->Obj.
-	   ! lib/RTx/ReportSource_Overlay.pm lib/RTx/Report_Overlay.pm
+	   ! lib/RTx/ReportSource_Overlay.pm
+	   ! lib/RTx/Report_Overlay.pm
 ____________________________________________________________________________
 [  8244] By: autrijus                              on 2003/09/26  10:36:28
         Log: * foo
@@ -25,7 +43,8 @@ ____________________________________________________________________________
 ____________________________________________________________________________
 [  8186] By: autrijus                              on 2003/09/20  05:29:44
         Log: * redo permissions.
-	   ! lib/RTx/Report_Overlay.pm lib/RTx/Reports_Overlay.pm
+	   ! lib/RTx/Report_Overlay.pm
+	   ! lib/RTx/Reports_Overlay.pm
 ____________________________________________________________________________
 [  8138] By: autrijus                              on 2003/09/14  20:21:02
         Log: * This be 0.00_05.
@@ -63,12 +82,15 @@ ____________________________________________________________________________
 ____________________________________________________________________________
 [  7964] By: autrijus                              on 2003/09/08  00:05:41
         Log: * merge some lexicon and a stuf html in.
-	   + MANIFEST Makefile Makefile.PL README html/RG/index.html
-	   + po/zh_cn.po po/zh_tw.po t/0-signature.t t/1-basic.t
+	   + MANIFEST Makefile Makefile.PL README
+	   + html/RG/index.html po/zh_cn.po po/zh_tw.po
+	   + t/0-signature.t t/1-basic.t
 	   ! lib/RTx/Report_Overlay.pm
 ____________________________________________________________________________
 [  7962] By: autrijus                              on 2003/09/07  23:45:05
         Log: * switch to DBIx::ReportBuilder
-	   - lib/RTx/Report/Clause.pm lib/RTx/Report/Edit.pm
-	   - lib/RTx/Report/Part.pm lib/RTx/Report/Part/P.pm
-	   - lib/RTx/Report/Render.pm lib/RTx/Report/Render/Edit.pm
+	   - lib/RTx/Report/Clause.pm
+	   - lib/RTx/Report/Edit.pm lib/RTx/Report/Part.pm
+	   - lib/RTx/Report/Part/P.pm
+	   - lib/RTx/Report/Render.pm
+	   - lib/RTx/Report/Render/Edit.pm

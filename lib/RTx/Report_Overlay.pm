@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Report_Overlay.pm $ $Author: autrijus $
-# $Revision: #14 $ $Change: 8281 $ $DateTime: 2003/09/28 13:50:46 $
+# $Revision: #17 $ $Change: 8478 $ $DateTime: 2003/10/19 01:40:28 $
 
 =head1 NAME
 
@@ -24,7 +24,6 @@ use RTx::Report;
 
 use strict;
 no warnings qw(redefine);
-our $VERSION = '0.00_06';
 
 use vars qw($RIGHTS);
 use RT::ACL;
@@ -377,11 +376,16 @@ sub Keys {
 }
 
 sub Views {
-    qw(Edit Preview PDF MSWord);
+    qw(Edit Preview PDF MSExcel);
 }
 
 sub Sets {
     qw(Parameter Page);
+}
+
+sub SearchHook {
+    my $self = shift;
+    return sub { $self->SearchHookCompany(@_) if $self->can('SearchHookCompany') };
 }
 
 1;
