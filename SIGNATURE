@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 ed0e2e0042310d76315bfb6550953a3615f62fab Changes
+SHA1 5c019efdacf57489b0e17bdd0ffa4b110c129bbf Changes
 SHA1 8e0cc6b37777171a7131b398449b46ecfa28b262 MANIFEST
-SHA1 2afd9f254a956c78ee9136069d49fac27c92f75e META.yml
-SHA1 ca19115ba6e52433f98910c3ed82f6beff0858d6 Makefile.PL
+SHA1 5499e5bfaf51df5406fdd4cc0dc33437c02b67b1 META.yml
+SHA1 489a825d768a5b9d8f6845221340da26bf8358d0 Makefile.PL
 SHA1 c371c92d440144461fb1b392facb0dbb2c08502c README
 SHA1 dfc50b59e850993aedb4ba4d25b28cdb8509d67b html/RG/index.html
 SHA1 1090dfe9ee5b3d7a4da2480265c4f1350697769e inc/Module/Install.pm
@@ -32,9 +32,9 @@ SHA1 9a79a2d5fd7622cb273f19b4a937a2fd129765d0 lib/RTx/Report.pm
 SHA1 ce98fc6db57bcc5c70f14552072bb3fc0673fa97 lib/RTx/ReportSource.pm
 SHA1 854357cbd7d84c4b11df41a760967cf1cc4e6f5f lib/RTx/ReportSource_Overlay.pm
 SHA1 cfaef96d4fc2c4b62f1f545b52ef77ce7171d348 lib/RTx/ReportSources.pm
-SHA1 624b25ee24210f5003f6a61be031579a812e667e lib/RTx/Report_Overlay.pm
+SHA1 c0aa961514bddcd7c06129cb4877d2f69fc31102 lib/RTx/Report_Overlay.pm
 SHA1 79f5121105aa167de35d51ce205dfb79beefecd4 lib/RTx/Reports.pm
-SHA1 eb976d801ab63a8bc7475b79770da92de83f39f6 lib/RTx/Reports_Overlay.pm
+SHA1 fa416bf7edd0bca51bf100ec3705d330eb0a75ca lib/RTx/Reports_Overlay.pm
 SHA1 78b9ed960e0b8b870f04a6993302c6b2828641d4 po/zh_cn.po
 SHA1 8e3a2f95747c28e1feed05807e85b7e622e22f69 po/zh_tw.po
 SHA1 da57ce23f32b963720ac2826190120f64dea4e1f t/0-signature.t
@@ -42,7 +42,7 @@ SHA1 af7191fc5bad774ebd2efdbcaf3989904bf81f1b t/1-basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.1 (FreeBSD)
 
-iD8DBQE/X8OOtLPdNzw1AaARArYpAJ9AUF1K5jb9rUJJCEXx/zYOA+8HlwCePgZ2
-7DZIraOMW6DuZfndTof4GMk=
-=P0Tx
+iD8DBQE/ZM5qtLPdNzw1AaARAluyAJ9FTQAztYsuP925YDDZVhGRsfBz+gCglFaW
+knN8A5Sm8Hs0O/BwbC70Nj8=
+=Majc
 -----END PGP SIGNATURE-----

@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Report_Overlay.pm $ $Author: autrijus $
-# $Revision: #5 $ $Change: 8046 $ $DateTime: 2003/09/11 00:33:36 $
+# $Revision: #7 $ $Change: 8138 $ $DateTime: 2003/09/14 20:21:02 $
 
 =head1 NAME
 
@@ -24,7 +24,7 @@ use RTx::Report;
 
 use strict;
 no warnings qw(redefine);
-our $VERSION = '0.00_04';
+our $VERSION = '0.00_05';
 
 use vars qw($RIGHTS);
 use RT::Groups;
@@ -302,10 +302,7 @@ sub LoadByName {
 
 sub ContentObj {
     my $self = shift;
-
-    my $obj = XML::Twig->new( @_ );
-    $obj->parse($self->Content);
-    return $obj;
+    return $self->ParseContent($self->Content);
 }
 
 sub NewContent {

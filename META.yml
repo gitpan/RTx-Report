@@ -1,6 +1,6 @@
 name: RTx-Report
 module_name: RTx::Report
-version: 0.00_04
+version: 0.00_05
 abstract: RT Report Extension
 author: Autrijus Tang (autrijus@autrijus.org)
 distribution_type: module
@@ -8,7 +8,7 @@ build_requires:
   Test::More: 0
 requires:
   XML::Twig: 3.00
-  DBIx::ReportBuilder: 0.00_05
+  DBIx::ReportBuilder: 0.00_07
 private:
   directory:
     - inc

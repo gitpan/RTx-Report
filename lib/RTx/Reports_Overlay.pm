@@ -1,5 +1,5 @@
 # $File: //member/autrijus/RTx-Report/lib/RTx/Reports_Overlay.pm $ $Author: autrijus $
-# $Revision: #3 $ $Change: 8045 $ $DateTime: 2003/09/11 00:32:05 $
+# $Revision: #6 $ $Change: 8121 $ $DateTime: 2003/09/14 16:05:04 $
 
 package RTx::Reports;
 no warnings 'redefine';
@@ -79,11 +79,13 @@ sub RenderReport {
     my $obj  = $self->ReportObj($id) or return;
 
     return DBIx::ReportBuilder->new(
+	Name		=> $obj->Name,
+	Description	=> $obj->Description,
 	Handle		=> $obj->ReportSourceObj->Handle,
 	Content		=> $obj->Content,
 	Loc		=> sub { $self->loc(@_) },
 	DescribeReport  => sub { $self->DescribeReport($_[0]) },
-	RenderReport    => sub { $self->ReportContentObj($_[0])->RenderHTML },
+	RenderReport    => sub { $self->ReportObj($_[0])->RenderHTML },
     )->RenderHTML;
 }
 
@@ -94,6 +96,18 @@ sub DescribeReport {
 
     return $obj->Name . " - " . $obj->Description . " (" . $obj->OwnerObj->Name . ")";
 }
+
+sub Categories {
+    my $self = shift;
+    return [ split(/\n/, $RT::SystemUser->Attribute($self->CategoriesKey)) ];
+}
+
+sub SetCategories {
+    my ($self, $list) = @_;
+    $RT::SystemUser->SetAttribute($self->CategoriesKey, join("\n", @$list));
+}
+
+sub CategoriesKey { 'ReportCategories' }
 
 $RTx::Reports ||= RTx::Reports->new($RT::SystemUser);
 
